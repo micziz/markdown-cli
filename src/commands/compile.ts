@@ -27,6 +27,7 @@ function handleContent(params: {compileEdContent: string, title: string, descrip
 `
 }
 
+
 export async function compile(params: { in: string, out?: string }){
     try {
         const readWithFrontMatter = await readFile(join(cwd(), params.in))
