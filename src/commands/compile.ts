@@ -4,7 +4,16 @@ import { cwd } from "process";
 import { micromark } from 'micromark'
 import matter from 'gray-matter'
 
-function handleContent(params: {compileEdContent: string, title: string, description: string}){
+/**
+    This function preperes the content to be written with the front matter
+    @param params {object} The object with the content to be written, the title and description
+    
+    For example
+    ```
+    handleContent({compileEdContent: "Hi", title: "A title", description: "A description"}
+    ```
+*/
+function handleContent(params: {compileEdContent: string, title: string, description: string}): string{
     return `
 <html>
     <head>
