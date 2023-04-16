@@ -1,16 +1,16 @@
 {
   "name": "markdowncli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Dead simple cli to compile markdown to html",
   "main": "bundle/bundle.js",
   "type": "module",
   "scripts": {
     "build-fast": "tsc && rollup -c && rimraf build",
     "dev": "pnpm build-fast && node ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["markdonw", "html", "cli", "compile", "front-matter", "micromark"],
+  "author": "micziz",
+  "license": "MIT",
   "devDependencies": {
     "@chiogen/rollup-plugin-terser": "^7.1.3",
     "@types/node": "^18.15.11",
